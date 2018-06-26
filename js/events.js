@@ -13,8 +13,8 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('form').on('keydown', function() {
-    if ($(this).val().toUpperCase() == "G") {
+  $('form').on('keydown', function(key) {
+    if (key.which == 71) {
       alert("Correct")
     }
   })

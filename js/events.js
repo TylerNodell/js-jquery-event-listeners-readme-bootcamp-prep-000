@@ -12,6 +12,20 @@ function frameIt() {
   })
 }
 
+function pressIt() {
+  $('form #typing').on('keydown', function() {
+    if ($(this).val().toUpperCase() == "G") {
+      alert("Correct")
+    }
+  })
+}
+
+function submitIt() {
+  $('form').on('submit', function() {
+    alert("Your form is going to be submitted now.")
+  })
+}
+
 $(document).ready(function(){
 
 // call functions here
